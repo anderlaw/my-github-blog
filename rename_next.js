@@ -47,7 +47,11 @@ files.forEach(name => {
     }
 })
 
-//迁移到根目录
+//删除旧目录next 再迁移到根目录
+
+if(fs.existsSync('./next') && fs.lstatSync('./next').isDirectory()){
+    fs.rmdirSync('./next')
+}
 const newFiles = fs.readdirSync('./out')
 newFiles.forEach(name => {
     fs.renameSync(`${__dirname}/out/${name}`,`${__dirname}/${name}`)
