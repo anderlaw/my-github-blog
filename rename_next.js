@@ -47,6 +47,10 @@ files.forEach(name => {
     }
 })
 
+if(fs.existsSync('./docs') && fs.lstatSync('./docs').isDirectory()){
+    fs.rmdirSync('./docs')
+}
+
 fs.renameSync('./out','./docs')
 
 

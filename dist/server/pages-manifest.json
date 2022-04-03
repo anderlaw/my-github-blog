@@ -1,9 +1,9 @@
 {
   "/_app": "pages/_app.js",
-  "/task": "pages/task.html",
   "/": "pages/index.html",
-  "/_error": "pages/_error.js",
   "/api/hello": "pages/api/hello.js",
+  "/task": "pages/task.html",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }
