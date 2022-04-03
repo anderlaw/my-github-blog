@@ -47,4 +47,10 @@ files.forEach(name => {
     }
 })
 
+//迁移到根目录
+const newFiles = fs.readdirSync('./out')
+newFiles.forEach(name => {
+    fs.renameSync(`${__dirname}/out/${name}`,`${__dirname}/${name}`)
+})
+
 console.log('运行完毕')
