@@ -1,4 +1,6 @@
-export default () => {
+import Link from 'next/link'
+
+const _Index = () => {
     return <ul style={{
         margin: 0,
         height: "60px",
@@ -7,7 +9,12 @@ export default () => {
         alignItems: 'center',
         gap: "20px"
     }}>
-        <li><a href="/">关于</a></li>
-        <li><a href="/task">工作清单</a></li>
+        <li>
+            <Link href="/"><a>关于</a></Link>
+        </li>
+        <li>
+            <Link href="/task"><a>工作清单</a></Link>
+        </li>
     </ul>
 }
+export default _Index

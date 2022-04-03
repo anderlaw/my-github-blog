@@ -31,8 +31,8 @@ const Home: NextPage = () => {
             <Mainlayout>
                 <ul>
                     {
-                        tasks.map(item => {
-                            return <li style={{marginBottom:'10px'}}>
+                        tasks.map((item,idx) => {
+                            return <li key={idx} style={{marginBottom:'10px'}}>
                                 {
                                     item.done && <DoneIcon/>
                                 }
