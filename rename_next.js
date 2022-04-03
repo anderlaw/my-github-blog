@@ -47,7 +47,7 @@ files.forEach(name => {
     }
 })
 
-fs.renameSync('./out','./doc')
+fs.renameSync('./out','./docs')
 
 
 console.log('运行完毕')
