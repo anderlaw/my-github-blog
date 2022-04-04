@@ -17,7 +17,11 @@ const Home: NextPage = () => {
                 <p>✍️ 撸撸代码、研究下技术、写写文章，看看恐怖电影</p>
                 <p>🦶 活跃于<a href="https://juejin.cn/user/2576910984952679">掘金</a>、<a
                     href="https://github.com/anderlaw">github</a></p>
-                <p style={{marginTop: "40px"}}>🎉 <strong>如果您喜欢我的工作，可以联系我来为您工作。</strong></p>
+                <p style={{marginTop: "40px"}}>🎉 <strong>如果您喜欢我的工作，可以
+                    <a href="mailto:974088545@qq.com">联系</a>
+                    <span>我来为您工作。</span>
+                </strong>
+                </p>
             </Mainlayout>
         </div>
     )
