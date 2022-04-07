@@ -4,6 +4,7 @@ const nextConfig = {
   assetPrefix: "./",
   // 编译文件的输出目录
   distDir: "dist/",
+  productionBrowserSourceMaps:true
 }
 
 module.exports = nextConfig
