@@ -1,5 +1,4 @@
 import type {NextPage} from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navigation from "../components/Navigation";
@@ -17,7 +16,11 @@ const tasks: Array<{
         description: `(上线地址：${'https://zebing.net'})`
     },
     {
-        name: '研究WebRTC',
+        name: '研究WebRTC并写个本地的Demo',
+        done: true,
+    },
+    {
+        name: '部署、测试WebRTC到云端',
         done: false,
     }
 ]
